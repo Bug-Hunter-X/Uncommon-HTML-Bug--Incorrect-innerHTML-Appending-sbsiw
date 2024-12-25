@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Correct way to append text using innerHTML:
+    const div = document.getElementById("myDiv");
+    div.innerHTML += "<p>This text will now be shown correctly.</p>";
+    // OR
+    //Alternative approach using insertAdjacentHTML which is more efficient and safe
+    const div2 = document.getElementById("myDiv");
+    div2.insertAdjacentHTML('beforeend', '<p>This text will also be shown correctly using insertAdjacentHTML</p>');
+  </script>
+</body>
+</html>
