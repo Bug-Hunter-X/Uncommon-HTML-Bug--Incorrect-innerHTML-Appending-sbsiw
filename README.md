@@ -1,0 +1,1 @@
+This repository demonstrates an uncommon bug in HTML related to using innerHTML to append text to an element that already contains text.  The bug causes the appended text not to render correctly. The solution illustrates how to correctly append content using innerHTML or alternative methods to ensure that text is displayed properly.
